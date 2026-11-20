@@ -1,6 +1,6 @@
 # Auto Insurance Customer Lifetime Value — Regression Analysis
 
-Predicting customer lifetime value (CLV) for an auto-insurance book of business using the [IBM Watson Marketing Customer Value](https://www.kaggle.com/datasets/pankajjsh06/ibm-watson-marketing-customer-value-data) dataset (9,134 customers, 24 columns). This is the regression counterpart of the Telco churn study (`../data_churn`): same three modeling phases, from simple baselines to gradient boosting with Bayesian hyperparameter optimization, but with a continuous, heavily skewed target.
+Predicting customer lifetime value (CLV) for an auto-insurance book of business using the [IBM Watson Marketing Customer Value](https://www.kaggle.com/datasets/pankajjsh06/ibm-watson-marketing-customer-value-data) dataset (9,134 customers, 24 columns). This is the regression counterpart of the [Telco churn study](https://github.com/andreslunagodoy/data_churn): same three modeling phases, from simple baselines to gradient boosting with Bayesian hyperparameter optimization, but with a continuous, heavily skewed target.
 
 ## Results
 
