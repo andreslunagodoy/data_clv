@@ -61,14 +61,3 @@ Open `CLV_DA.ipynb` — it contains all three phases with timing instrumentation
 **Regression-specific results:**
 - Log-transforming the target cuts dollar MAE by about 12% versus training on raw dollars, but is slightly worse on dollar RMSE / R² (the few very large CLVs dominate those).
 - 90% prediction intervals: quantile LightGBM covers 87.9% (narrow, adaptive width); a CV-residual conformal band covers 90.1% but is about 30% wider because it uses one width for everyone.
-
-## Differences from the Churn Study
-
-| Churn (classification) | CLV (regression) |
-|------------------------|------------------|
-| Class imbalance: `class_weight`, SMOTE | Skewed target: `log1p` transform |
-| Accuracy / precision / recall / F1 / ROC-AUC | RMSE / MAE / R² on log and dollar scales |
-| Threshold optimization | Target back-transformation and smearing |
-| Calibration curves | Prediction intervals (quantile + conformal) |
-| Confusion matrices | Residual diagnostics and error by segment |
-| Stratified K-fold | Plain K-fold |
